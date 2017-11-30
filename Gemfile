@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'faker'
 
+gem 'carrierwave'
+
 gem 'wdm', '~> 0.1.0'
 
 group :development, :test do
