@@ -7,12 +7,12 @@
 
 <p>
   <strong>Avatar:</strong>
-  <%= @user.avatar %>
+  <%= image_tag @user.avatar, size: 100 %>
 </p>
 
 <p>
   <strong>Team:</strong>
-  <%= @user.team_id %>
+  <%= @user.team.name %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
