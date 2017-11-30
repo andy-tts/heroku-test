@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Team.create(name: 'Hufflepuff')
+Team.create(name: 'Slytherin')
+Team.create(name: 'Griffindor')
+Team.create(name: 'Ravenclaw')
+
+3.times do 
+User.create(
+	name: Faker::Simpsons.character,
+	team: Team.all.sample
+	)
+end
